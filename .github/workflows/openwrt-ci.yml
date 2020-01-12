@@ -63,8 +63,8 @@ jobs:
           rm -f ./.config*
           touch ./.config
           
-        - name: 增加插件示例
-        run: |
+       - name: Add openwrt theme
+          run: |          
           cd package
           mkdir openwrt-packages
           cd openwrt-packages
