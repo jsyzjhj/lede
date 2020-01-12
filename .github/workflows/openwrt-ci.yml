@@ -103,7 +103,6 @@ jobs:
 
           # 编译x64固件:
           cat >> .config <<EOF
-          PHICOMM K3
           CONFIG_TARGET_bcm=y
           CONFIG_TARGET_bcm43xx=y
           CONFIG_TARGET_PHICOMM K3=y
