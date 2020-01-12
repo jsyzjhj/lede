@@ -62,13 +62,6 @@ jobs:
         run: |
           rm -f ./.config*
           touch ./.config
-          
-       - name: Add openwrt theme
-          run: |          
-          cd package
-          mkdir openwrt-packages
-          cd openwrt-packages
-          git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
 
           #
           # ========================固件定制部分========================
@@ -174,7 +167,6 @@ jobs:
           # cat >> .config <<EOF
           # CONFIG_PACKAGE_luci-theme-argon=y
           # CONFIG_PACKAGE_luci-theme-netgear=y
-          # CONFIG_PACKAGE_luci-theme-atmaterial=y
           # EOF
 
           # 常用软件包:
